@@ -1,9 +1,8 @@
+FROM python:3
 MAINTAINER Mike Walker <github@noisufnoc.com>
 
-FROM python:3
-
-ADD alpha_vantage_to_mqtt.py
-ADD requirements.txt
+ADD alpha_vantage_to_mqtt.py /
+ADD requirements.txt /
 
 RUN pip install -r requirements.txt
 
